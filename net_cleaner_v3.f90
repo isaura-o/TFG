@@ -90,7 +90,7 @@
         end if 
     end do 
    
-    write(*,*) 'nombre de edges que no estan repetits (ij /= ij) = ', j-1 
+    write(*,*) 'num of repeated edges (ij /= ij) = ', j-1 
  
 ! clean symmetric edges i,j = j,i
    p=1
