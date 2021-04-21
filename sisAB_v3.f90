@@ -130,10 +130,10 @@
 !  
 ! ############### log file ########################
 call date_and_time(date_c(1), date_c(2), date_c(3), date_time)
-open(unit= 43, file = 'sisab_v1.log' , status='unknown', position='append' )
+open(unit= 43, file = 'sisab_v3.log' , status='unknown', position='append' )
 write(43,*) 'd:', date_c(1),  ' h:', date_c(2), ' input: file =' ,&
   & trim(flname)//'.dat','dA'//trim(delta)//'dB'//trim(deltb)//'LA' &
-  & //trim(lamba)//'LB'//trim(lambb),'  output:  rho_t.dat', ' ./dinam_v3     '
+  & //trim(lamba)//'LB'//trim(lambb),'  output:  rho_t.dat', ' ./sisab_v3     '
   
 close(43)
 ! #################################################
